@@ -374,3 +374,5 @@
     max-width: 100%;
     max-height: 100%;
 }
+
+.product-wrap .product-img .product-action .pro-same-action a{font-size: 13px !important;}
