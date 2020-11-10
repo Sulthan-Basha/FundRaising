@@ -140,7 +140,7 @@
 
 <div class="my-fundraiser mt-50 mb-80">
     <div class="container">
-		<div class="col-md-4 col-lg-2 col-sm-3 col-12 pull-left col-xl-3">
+		<div class="col-md-4 col-lg-3 col-sm-3 col-12 pull-left col-xl-2">
 			<div class="top-sidebar mt-10">
 				<h4 class="title-1 mrg-top-0">Top Sellers</h4>
 				<div class="item-info">
@@ -170,7 +170,7 @@
 					</table>
 				</div>
 			</div>
-			<div class="top-sidebar mt-10">
+			<!--div class="top-sidebar mt-10">
 			<h4 class="title-1 mrg-top-0">Top Grades</h4>
 				<div class="item-info">
 					<table class="table">
@@ -198,20 +198,21 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
+			</div-->
 		</div>
-		<div class="col-md-8 col-lg-10 col-sm-8 col-xl-9 col-12 pull-left">
+		<div class="col-md-8 col-lg-9 col-sm-8 col-xl-10 col-12 pull-left">
         <div class="campaing-title mb-20">
-            <h2>Help for Health care child <a href="fundraising-form.html" class="myfundraiser-btn pull-right">Edit This Campaign</a></h2>
+            <h2>Help for Health care child </h2>
+			<button type="button" class="myfundraiser-btn pull-right">Edit This Campaign</button>
             <h3>Fundraising campaign by <strong><a href="">James</a></strong></h3>
         </div>
 		<div class="myfundraise-content">
-		<div class="col-md-12 col-lg-4 col-sm-3 col-xl-4 col-12 pull-left nopadding">
+		<div class="col-md-12 col-lg-3 col-sm-3 col-xl-4 col-12 pull-left nopadding">
 			<div class="myfundraise-banner">
 				<img src="assets/images/myfundraiser/fundraise_banner.jpg" class="img-fluid"/>
 			</div>
 		</div>
-		<div class="col-md-12 col-lg-8 col-sm-9 col-xl-8 col-12 pull-left nopadding">
+		<div class="col-md-12 col-lg-9 col-sm-9 col-xl-8 col-12 pull-left nopadding">
 			<div class="myfundraise-details">
 				<div class="col-md-12 col-lg-6 col-sm-12 col-xl-5 col-12 pull-left nopadding">
 					<h2>Goal: $2500.00</h2>
@@ -246,7 +247,7 @@
 						  <li><span id="MsgTimer"></span>&nbsp;</li>
 						</ul>
 					</div>
-					<div class="social-share ml-80">
+					<div class="social-share">
 						<ul>
 							<li><a href="#" data-toggle="tooltip" data-placement="top" title="Share with Facebook"><i class="fa fa-facebook icon"></i></a></li>
 							<li><a href="#" data-toggle="tooltip" data-placement="top" title="Share with Twitter"><i class="fa fa-twitter icon"></i></a></li>
@@ -295,8 +296,8 @@
 					<li><a href="#">Andrew</a> donated $500 to this Campaign</li>
 				</ul>
 			</div>
-			<div class="col-md-12 col-xl-12 col-sm-12 col-lg-12 col-12 text-center center-block mt-10 mb-10">
-				<button type="button" class="myfundraiser-btn">View Items for this Campaign</button>
+			<div class="col-md-12 col-xl-12 col-sm-12 col-lg-12 col-12 text-center center-block mt-20 mb-10">
+				<button type="button" class="myfundraiser-btn">Go to Campaign Launch Page</button>
 				<button type="button" class="myfundraiser-btn">Download Order form</button>
 				<button type="button" class="myfundraiser-btn">Download Catalog</button>
 			</div>
@@ -325,7 +326,7 @@
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pull-left">
 			<div class="thermo-chart">
-				<h4 class="text-center">Total Funds Collected <em>(last 6 months)</em></h4>
+				<h4 class="text-center">Total Funds Collected <em>(last 6 weeks)</em></h4>
 				 <div class="highcharts-figure"><div id="column-container"></div></div>
 			</div>
 					
@@ -441,12 +442,12 @@ let countDown = new Date('Nov 30, 2020 00:00:00').getTime(),
   },
   xAxis: {
     categories: [
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov'
+      'Week 1',
+      'Week 2',
+      'Week 3',
+      'Week 4',
+      'Week 5',
+      'Week 6'
     ],
     crosshair: true
   },
@@ -458,7 +459,7 @@ let countDown = new Date('Nov 30, 2020 00:00:00').getTime(),
   },
   colors: ['#4f786d'],
   tooltip: {
-    headerFormat: '<span style="font-size:10px">{point.key} Month Fund Collected</span><table>',
+    headerFormat: '<span style="font-size:10px">{point.key} Fund Collected</span><table>',
     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
       '<td style="padding:0"><b>$ {point.y:.f}</b></td></tr>',
     footerFormat: '</table>',
@@ -472,7 +473,7 @@ let countDown = new Date('Nov 30, 2020 00:00:00').getTime(),
     }
   },
   series: [{
-    name: 'Month',
+    name: 'Week',
     data: [250, 390, 275, 310, 510, 15]
 
   }]

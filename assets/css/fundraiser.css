@@ -1,4 +1,5 @@
 /* My Fund Raiser Page CSS 30/09/2020 */
+a:focus, a:hover {color:#fff;}
 .nopadding{padding-left:0; padding-right:0px;}
 .my-fundraiser {overflow:hidden;}
 .myfundraise-content {overflow:hidden; background-color:#f7f7f7;}
@@ -13,6 +14,7 @@
 .item-info p {color:#888; font-size:12px; margin-bottom:0px;}
 .item-info h5 {margin-bottom:5px;}
 .collected {font-size:14px !important; color:#4f786d !important;}
+.campaing-title h2 {margin-bottom:5px; }
 .campaing-title h2 a {font-size:15px;}
 .campaing-title h2 a:hover {color:#fff;}
 .myfundraise-banner {overflow:hidden; padding:10px;}
@@ -78,6 +80,7 @@
 .recent-donations a {color:#4f786d; text-decoration:underline;}
 .recent-donations li {padding:10px; border-bottom:1px solid #ccc; }
 .recent-donations li:last-child {border-bottom:none;}
+.social-share ul {width:220px; overlow:hidden; margin:0 auto; }
 .social-share ul li a {
   width: 40px;
     height: 40px;
@@ -154,7 +157,7 @@
   background: #dd4b39;
 }
 .social-share {margin-top:100px; }
-.myfundraiser-btn {background-color:#4f786d; color:#fff; padding:3px 6px; border-radius:4px; border:none; margin-right:2px; font-weight:normal; margin-bottom:10px;}
+.myfundraiser-btn {background-color:#4f786d; color:#fff; padding:4px 12px; border-radius:4px; border:none; margin-right:2px; font-weight:normal; margin-bottom:10px;}
 #custom-scroll::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -223,21 +226,29 @@
 .highcharts-yaxis tspan {font-weight:bold !important; color: #4f786d !important;}
 
 
+
+
+
 /* Media Queries */
 @media (min-width: 320px) and (max-width: 1899px) {
 	.social-share {margin-top:20px;}
+	
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-	.social-share {width:60%; margin:0 auto;}
+	.social-share {margin-top:50px;}
+	.countdown li span {
+    font-size: 30px;
+}
+.countdown li {font-size:10px; }
 }
 
 
 @media (min-width: 1200px) and (max-width: 1899px) {
-	.social-share {width:80%; margin:0 auto;}
+	.social-share {margin-top:70px;}
 	.recent-donations {height:136px;}
 }
 @media (min-width: 993px) and (max-width: 1199px) {
-	.social-share {width:90%; margin:0 auto;}
+	.social-share {margin:0 auto;}
 	.recent-donations {height:136px;}
 }

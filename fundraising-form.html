@@ -31,6 +31,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
     <!-- Modernizer JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<style>
+		.com-btn {border:none; font-weight:600; padding:10px 15px; letter-spacing:0px; margin-top:15px; margin-bottom:15px;}
+	</style>
 </head>
 
 <body>
@@ -174,19 +177,34 @@
 			<div class="col-xl-12">
 				<h2 class="fun-form-head title-fund">Start a Fundraiser</h2>
 			</div>
-			<div class="col-xl-8">
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
 				<div class="fund mb-20">
                                 <label>Campaign Title <span class="req">*</span></label>
                                 <input type="text">
                             </div>
 			</div>
-			<div class="col-xl-8">
-				<div class="fund mb-20">
-                                <label>Campaign Description</label>
-                                <textarea class="form-control" rows="3" id="comment" style="resize:none;"></textarea>
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+			<div class="fund mb-20">
+                                <label>Start Date <span class="req">*</span></label>
+                                 <input data-date-format="dd/mm/yyyy" id="datepicker">
+								 <span><i class="fa fa-caledar"></i></span>
                             </div>
 			</div>
-			<div class="col-xl-8">
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+			<div class="fund mb-20">
+                                <label>End Date <span class="req">*</span></label>
+                                 <input data-date-format="dd/mm/yyyy" id="datepicker">
+                            </div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+				<div class="fund mb-20">
+                                <label>Goal For This campaign</label>
+                                <input type="text">
+                            </div>
+			</div>
+			
+			
+			<!--div class="col-xl-8">
 				<div class="fund mb-20">
                                 <label>Fundraiser Category <span class="req">*</span></label>
                                 <select>
@@ -194,7 +212,7 @@
                                     <option>Church</option>
                                 </select>
                             </div>
-			</div>
+			</div-->
 			<!-- <div class="col-xl-8">
 				<div class="fund mb-20">
                                 <label>What currency do you want to raise money in?</label>
@@ -209,19 +227,20 @@
 			
 			</div>
 				<div class="row">
-			<div class="col-xl-4">
-			<div class="fund mb-20">
-                                <label>Start Date <span class="req">*</span></label>
-                                 <input data-date-format="dd/mm/yyyy" id="datepicker">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+						<div class="fund mb-20">
+                                <label>Campaign Description</label>
+                                <textarea class="form-control" rows="3" id="comment" style="resize:none;"></textarea>
+                        </div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+				<div class="fund mb-20">
+                                <label>Select Managers <span class="lab-cap">(Assign to this campaign)</span> <span class="req">*</span></label>
+                                <textarea class="form-control" rows="3" id="comment" style="resize:none;"></textarea>
+								<p>Enter multiple email addresses separated by commas</p>
                             </div>
 			</div>
-			<div class="col-xl-4">
-			<div class="fund mb-20">
-                                <label>End Date <span class="req">*</span></label>
-                                 <input data-date-format="dd/mm/yyyy" id="datepicker">
-                            </div>
-			</div>
-			</div>
+				</div>
 			<div class="row">
 			<div class="col-xl-12">
 				<h2 class="fun-form-head title-fund">Images & Videos</h2>
@@ -254,27 +273,26 @@
                             </div>
 			</div>
 			<div class="col-xl-8">
-				<div class="fund mb-20">
-                                <label>Goal For This campaign</label>
-                                <input type="text">
-                            </div>
-			</div>
-			<div class="col-xl-8">
-				<div class="fund mb-20">
-                                <label>Select Managers <span class="lab-cap">(Assign to this campaign)</span> <span class="req">*</span></label>
-                                <textarea class="form-control" rows="3" id="comment" style="resize:none;"></textarea>
-								<p>Enter multiple email addresses separated by commas</p>
-                            </div>
+				<label>How would you like to select items for campaign ?</label>
 			</div>
 			
-			<div class="col-xl-8">
-			<div class="fund mb-20">
-								<p class="select-items-cam"><a href="fundraising-items-category.html">Click here to select the items for Campaign.</a></p>
-								
-                            </div>
+			<div class="col-xl-12">
+				<div class="fund mb-20">
+					
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-center center-block">
+						<button type="button" class="com-btn">Items Curated for your Campaign</button>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-center center-block">
+						<button type="button" class="com-btn">Select our Best Sellers</button>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-center center-block">
+						<button type="button" class="com-btn">Select specific items</button>
+					</div>
+									
+				</div>
 			</div>
 						<div class="col-xl-12">
-				<div class="text-center mt-20">
+				<div class="text-center mt-20 mb-20">
                         <button class="btn-hover rounded-btn" type="submit">Submit</button>
                         <button class="btn-hover rounded-btn" type="submit">Clear</button>
                         
@@ -305,7 +323,7 @@
 			
 			
 		<div class="col-xl-12">
-				<div class="text-center mt-20">
+				<div class="text-center">
                         <button class="btn-hover rounded-btn step-2-back" type="submit">Back</button>
                         <button class="btn-hover rounded-btn step-3-next" type="submit">Start Fundraiser</button>
                         
@@ -711,96 +729,12 @@ $(function () {
 });
 
 </script>
-<script>
-$(function () {
-$('.step-1-img').show();
-$('.step-2-img').hide();
-$('.step-3-img').hide();
-$('.step-4-img').hide();
-$('.step-1-form').show();
-$('.step-2-form').hide();
-$('.step-3-form').hide();
-$('.step-4-form').hide();
 
- $('.step-1-next').click(function(){
-	$('.step-1-img').hide();
-$('.step-2-img').show();
-$('.step-3-img').hide();
-$('.step-4-img').hide();
-$('.step-1-form').hide();
-$('.step-2-form').show();
-$('.step-3-form').hide();
-$('.step-4-form').hide();
-	
- });
-  $('.step-1-back').click(function(){
-	$('.step-1-img').show();
-$('.step-2-img').hide();
-$('.step-3-img').hide();
-$('.step-4-img').hide();
-$('.step-1-form').show();
-$('.step-2-form').hide();
-$('.step-3-form').hide();
-$('.step-4-form').hide();
-	
- });
-  $('.step-2-next').click(function(){
-	$('.step-1-img').hide();
-$('.step-2-img').hide();
-$('.step-3-img').show();
-$('.step-4-img').hide();
-$('.step-1-form').hide();
-$('.step-2-form').hide();
-$('.step-3-form').show();
-$('.step-4-form').hide();
-	
- });
-  $('.step-2-back').click(function(){
-	$('.step-1-img').hide();
-$('.step-2-img').show();
-$('.step-3-img').hide();
-$('.step-4-img').hide();
-$('.step-1-form').hide();
-$('.step-2-form').show();
-$('.step-3-form').hide();
-$('.step-4-form').hide();
-	
- });
-   $('.step-3-next').click(function(){
-	$('.step-1-img').hide();
-$('.step-2-img').hide();
-$('.step-3-img').hide();
-$('.step-4-img').show();
-$('.step-1-form').hide();
-$('.step-2-form').hide();
-$('.step-3-form').hide();
-$('.step-4-form').show();
-	
- });
-  $('.step-3-back').click(function(){
-	$('.step-1-img').hide();
-$('.step-2-img').hide();
-$('.step-3-img').show();
-$('.step-4-img').hide();
-$('.step-1-form').hide();
-$('.step-2-form').hide();
-$('.step-3-form').show();
-$('.step-4-form').hide();
-	
- });
-});
-
-</script>
 <script>
 $("form").on("change", ".file-upload-field", function(){ 
     $(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
 });
 </script>
- <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
 </body>
 
 </html>
