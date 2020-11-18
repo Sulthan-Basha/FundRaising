@@ -46,6 +46,25 @@
 .product-img-items a {
     line-height: 48px !important;
 }
+.title-fund-h {
+    color: #4f786d;
+    font-size: 25px !important;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 17px;
+    position: relative;
+    text-transform: inherit;
+}
+.title-fund-h::before {
+    content: "";
+    background: #4f786d;
+    bottom: -9px;
+    content: "";
+    height: 2px;
+    left: 3px;
+    position: absolute;
+    width: 35px;
+}
 .title-fund {
     color: #4f786d;
     font-size: 18px !important;
