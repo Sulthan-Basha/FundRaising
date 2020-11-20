@@ -287,7 +287,8 @@
 				</div>
 			<div class="clearfix"></div>
 			<div class="col-md-12">
-				<h4 class="title-1">Recent Donations</h4>
+				<h4 class="title-1">Recent Donations <button type="button" class="myfundraiser-btn pull-right" data-toggle="modal" data-target="#exampleModal">See All Donations</button></h4>
+				
 				<ul class="recent-donations" id="custom-scroll">
 					<li><a href="#">Vincent</a> donated $300 to this Campaign</li>
 					<li><a href="#">Smith</a> donated $150 to this Campaign</li>
@@ -352,7 +353,62 @@
 <div class="footer-block">
 	<p>© 2020 <a href="#">Homeful Gifts</a>. All Rights Reserved</p>
 </div>
+<!-- Modal -->
 
+<div class="modal fade cust-modal" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+						<div class="all-donation">
+					 <div class="table-content table-responsive cart-table-content alldonation-table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+									<th>Donation $</th>
+                                    <th>Donation Date</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+									<td>James</td>
+									<td>600</td>
+									<td>11/10/2020</td>
+                                  
+                                </tr>
+								<tr>
+                                    
+									<td>Smith</td>
+									<td>300</td>
+									<td>11/10/2020</td>
+                                  
+                                </tr>
+								<tr>
+                                    
+									<td>Robbin</td>
+									<td>200</td>
+									<td>11/10/2020</td>
+                                  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+							</div>				
+					   
+					</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
 <!-- JS
 ============================================ -->
 

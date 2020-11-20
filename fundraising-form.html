@@ -239,6 +239,20 @@
                                 <textarea class="form-control" rows="3" id="comment" style="resize:none;"></textarea>
                         </div>
 					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+				<div class="fund mb-20">
+                                <label>Campaign Managers <span class="req">*</span></label>
+                                <select>
+                                    <option>Campaign Manager 1</option>
+                                    <option>Campaign Manager 2</option>
+                                    <option>Campaign Manager 3</option>
+                                    <option>Campaign Manager 4</option>
+                                </select>
+                            </div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+				<button type="button" class="com-btn"  data-toggle="modal" data-target="#exampleModal" style="margin-top:30px;">Add New Manager</button>
+			</div>
 					<!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 				<div class="fund mb-20">
                                 <label>Select Managers <span class="lab-cap">(Assign to this campaign)</span> <span class="req">*</span></label>
@@ -288,13 +302,15 @@
 					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-center center-block">
 						<button type="button" class="com-btn">Items Curated for your Campaign</button>
 					</div>
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-center center-block">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 text-center center-block">
 						<button type="button" class="com-btn">Select our Best Sellers</button>
 					</div>
-					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 text-center center-block">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 text-center center-block">
 						<button type="button" class="com-btn" onClick="parent.location='fundraising-items-category.html'">Select specific items</button>
 					</div>
-									
+					<div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 text-center center-block">
+						<button type="button" class="com-btn" onClick="parent.location='fundraising-items-add.html'">View items</button>
+					</div>				
 				</div>
 			</div>
 						<div class="col-xl-12">
@@ -444,141 +460,70 @@
 </footer>
 
  -->
+
+
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+
+<div class="modal fade cust-modal" id="exampleModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
-            </div>
+            
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-5 col-sm-12 col-xs-12">
-                        <div class="tab-content quickview-big-img">
-                            <div id="pro-1" class="tab-pane fade show active">
-                                <img src="assets/img/product/hm18-pro-3.jpg" alt="">
-                            </div>
-                            <div id="pro-2" class="tab-pane fade">
-                                <img src="assets/img/product/hm18-pro-3.jpg" alt="">
-                            </div>
-                            <div id="pro-3" class="tab-pane fade">
-                                <img src="assets/img/product/hm18-pro-3.jpg" alt="">
-                            </div>
-                            <div id="pro-4" class="tab-pane fade">
-                                <img src="assets/img/product/hm18-pro-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- Thumbnail Large Image End -->
-                        <!-- Thumbnail Image End -->
-                        <div class="quickview-wrap mt-15">
-                            <div class="quickview-slide-active owl-carousel nav nav-style-1" role="tablist">
-                                <a class="active" data-toggle="tab" href="#pro-1"><img src="assets/img/product/hm18-pro-3.jpg" alt=""></a>
-                                <a data-toggle="tab" href="#pro-2"><img src="assets/img/product/hm18-pro-3.jpg" alt=""></a>
-                                <a data-toggle="tab" href="#pro-3"><img src="assets/img/product/hm18-pro-3.jpg" alt=""></a>
-                                <a data-toggle="tab" href="#pro-4"><img src="assets/img/product/hm18-pro-3.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-xs-12">
-                        <div class="product-details-content quickview-content">
-                            <h2>Honey Pot W/ Wooden Dipper</h2>
-                            <div class="product-details-price">
-                                <span>$18.00 </span>
-                                <span class="old">$20.00 </span>
-                            </div>
-                            <div class="pro-details-rating-wrap">
-                                <div class="pro-details-rating">
-                                    <i class="fa fa-star-o yellow"></i>
-                                    <i class="fa fa-star-o yellow"></i>
-                                    <i class="fa fa-star-o yellow"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                </div>
-                                <span>3 Reviews</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco</p>
-                            <div class="pro-details-list">
-                                <ul>
-                                    <li>- 0.5 mm Dail</li>
-                                    <li>- Inspired vector icons</li>
-                                    <li>- Very modern style  </li>
-                                </ul>
-                            </div>
-                            <div class="pro-details-size-color">
-                                <div class="pro-details-color-wrap">
-                                    <span>Color</span>
-                                    <div class="pro-details-color-content">
-                                        <ul>
-                                            <li class="blue"></li>
-                                            <li class="maroon active"></li>
-                                            <li class="gray"></li>
-                                            <li class="green"></li>
-                                            <li class="yellow"></li>
-                                            <li class="white"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="pro-details-size">
-                                    <span>Size</span>
-                                    <div class="pro-details-size-content">
-                                        <ul>
-                                            <li><a href="#">s</a></li>
-                                            <li><a href="#">m</a></li>
-                                            <li><a href="#">l</a></li>
-                                            <li><a href="#">xl</a></li>
-                                            <li><a href="#">xxl</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pro-details-quality">
-                                <div class="cart-plus-minus">
-                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
-                                </div>
-                                <div class="pro-details-cart btn-hover">
-                                    <a href="#">Add To Cart</a>
-                                </div>
-                                <div class="pro-details-wishlist">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </div>
-                                <div class="pro-details-compare">
-                                    <a href="#"><i class="pe-7s-shuffle"></i></a>
-                                </div>
-                            </div>
-                            <div class="pro-details-meta">
-                                <span>Categories :</span>
-                                <ul>
-                                    <li><a href="#">Minimal,</a></li>
-                                    <li><a href="#">Furniture,</a></li>
-                                    <li><a href="#">Electronic</a></li>
-                                </ul>
-                            </div>
-                            <div class="pro-details-meta">
-                                <span>Tag :</span>
-                                <ul>
-                                    <li><a href="#">Fashion, </a></li>
-                                    <li><a href="#">Furniture,</a></li>
-                                    <li><a href="#">Electronic</a></li>
-                                </ul>
-                            </div>
-                            <div class="pro-details-social">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                      
+											<h2 class="title-2">Add New Manager</h2>
+					   <form>
+							<div class="row">
+							
+							<div class="col-xl-12">
+								<div class="form-group">
+								  <label for="usr">Name:</label>
+								  <input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-12">
+								<div class="form-group">
+								  <label for="usr">Email:</label>
+								  <input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-12">
+								<div class="form-group">
+								  <label for="usr">Phone:</label>
+								  <input type="text" class="form-control">
+								</div>
+							</div>
+							<!-- <div class="col-xl-12">
+								<div class="form-group">
+								  <label for="usr">Description:</label>
+								  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" style="resize:none;"></textarea>
+									<span>2000 characters remaiming.</span>
+								</div>
+							</div> -->
+							<!-- <div class="col-xl-12">
+								<div class="make-default">
+								  <label class="btn active">
+									<input type="checkbox" name='email1' checked><i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i> <span>&nbsp;I want receive email marketing & offers</span>
+								  </label>
+								</div>
+							</div> -->
+							<div class="col-xl-12">
+								<div class="cust-btn-3">
+									<a href="">Save</div>
+								</div>
+							</div>
+												
+					  </form>
+					</div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Modal end -->
-
 
 <div class="clickable-mainmenu">
         <div class="clickable-mainmenu-icon">
